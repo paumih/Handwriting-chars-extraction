@@ -1,4 +1,4 @@
-# OCR-Handwriting-recognition-OpenCV
+# Handwriting lines and chars extraction
 
 handwriting recognition tends to be significantly harder than traditional OCR that uses specific fonts/characters.
 
