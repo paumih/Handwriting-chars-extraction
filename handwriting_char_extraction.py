@@ -34,9 +34,9 @@ def extract_text_lines(img,output_dir):
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (16, 2))
     dilate = cv2.dilate(thresh, kernel, iterations=2)
     # cv2.imshow('dilate', dilate)
+    # cv2.waitKey(0)
 
     cnts = cv2.findContours(dilate, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    cv2.waitKey(0)
     if len(cnts) == 2:
         cnts = cnts[0]
     else:
